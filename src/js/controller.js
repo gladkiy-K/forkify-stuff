@@ -130,6 +130,10 @@ const controlAddRecipe = async function (newRecipe) {
   }
 };
 
+function newFeature() {
+  console.log('Hello to app');
+}
+
 //SubPub model  ВОТ ЭТИ ЕБАЛЫ ВОЗВРАЩАЮТ ПРОМИС БЕЗ ДАННЫХ
 // если фуллфиллд тогда лодистя страница
 function init() {
@@ -140,7 +144,7 @@ function init() {
   searchView.addHandlerSearch(controlSearchResults); // Sidebar which contains all the recipies
   paginationView.addHandlerClick(controlPagination); // Counting and putting pages onto the main page
   addRecipeView.addHandlerUpload(controlAddRecipe);
-  console.log('Hello');
+  newFeature();
 }
 init();
 
